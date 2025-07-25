@@ -1,1 +1,1 @@
-{"root":["./src/cvsummarizer.ts","./src/main.ts","./src/sendmailfunc.ts","./src/webscraper.ts","./src/websitesummarizer.ts","./src/writefile.ts"],"version":"5.8.3"}
+{"root":["./src/cvsummarizer.ts","./src/main.ts","./src/readfile.ts","./src/sendmailfunc.ts","./src/webscraper.ts","./src/writefile.ts"],"version":"5.8.3"}

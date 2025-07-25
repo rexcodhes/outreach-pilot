@@ -1,10 +1,14 @@
-import * as fsPromises from 'fs/promises';
+import * as fs from "fs";
 
-    export async function writeMarkdownFile(filePath:string, response:string) {
-        try {
-            await fsPromises.writeFile(filePath, response);
-            console.log('Markdown file written successfully (using promises).');
-        } catch (err) {
-            console.error('Error writing Markdown file (using promises):', err);
-        }
+let markdownContent: string;
+let filePath: string;
+
+export async function writeFileFn(filePath, markdownContent) {
+  await fs.writeFile(filePath, markdownContent, (err) => {
+    if (err) {
+      console.error("Error writing to file:", err);
+      return;
     }
+    console.log("Markdown content written to my-file.md successfully!");
+  });
+}
